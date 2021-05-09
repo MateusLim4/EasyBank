@@ -1,0 +1,528 @@
+:root{
+    /*Primary colors*/
+    --Dark-blue: hsl(233, 26%, 24%);
+    --Lime-green: hsl(136, 65%, 51%);
+    --Bright-cyan: hsl(192, 70%, 51%);
+
+    /*Secundary colors*/
+    --Grayish-blue: hsl(233, 8%, 62%);
+    --Light-grayvish-blue: hsl(220, 16%, 96%);
+    --Very-light-grey: hsl(0, 0%, 98%);
+}
+
+
+/* All document ---------------------------------*/
+*{
+    padding:0;
+    margin:0;
+    font-family: 'Public Sans', sans-serif;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+html{
+    overflow-x: hidden;
+
+}
+
+a{
+    text-decoration: none;
+}
+
+body{
+    background-color: var(--Very-light-grey);
+}
+
+h2{
+    color: var(--Dark-blue);
+    font-weight: 200;
+    font-size: 2.75rem;
+}
+
+section{
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+/* Links -----------------------------------------*/
+#links a{
+    padding: 1.8rem 1rem;
+    color: var(--Grayish-blue)
+}
+
+#links a:hover{
+    border-bottom: 4px solid;
+    border-image-slice: 1;
+    border-image-source: linear-gradient(to right, var(--Lime-green),var(--Bright-cyan));
+}
+
+#invite a{
+    padding: 0.85rem 2rem;
+    background: linear-gradient(to right, var(--Lime-green),var(--Bright-cyan));
+    border-radius: 2rem;
+    color: var(--Very-light-grey);
+}
+
+#invite a:hover{
+    opacity: 0.6;
+}
+
+/* Header ----------------------------------------*/
+header{
+    background-color: white;
+}
+
+#hamburgerDiv{
+    visibility: hidden;
+    position: absolute;
+}
+
+nav{
+    max-width: 1440px;
+    height: 5rem;
+    padding: 0 2rem;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 5rem;
+}
+
+nav img{
+    height: 1.5rem;
+}
+
+/* MAIN -------------------------------------------*/
+#container{
+    max-width: 1440px;
+    margin:auto;
+}
+
+
+/*Section: principal -----------------------*/
+
+.principal{
+    margin-bottom: 11.86rem;
+}
+
+#all{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+}
+
+#content h1{
+    margin-top: 10rem;
+    font-size: 4rem;
+    font-weight: 400;
+    color: var(--Dark-blue);
+    margin-bottom: 1.75rem;
+}
+
+#content p{
+    color: var(--Grayish-blue);
+    line-height: 1.75rem;
+    margin-bottom: 3rem;
+}
+
+#cellphone{
+    margin: -29rem 0rem 0rem 3.9rem;
+    position: absolute;
+    height: 68rem;
+    width: auto;
+    z-index: -1;
+}
+
+#backcolor{
+    position:absolute;
+    z-index: -2;
+    width: 80rem;
+    height: auto;
+    margin: -36rem 0 0 -6.3rem;
+}
+
+
+
+/*Section: whyChoose -----------------------*/
+
+.whyChoose{
+    margin-top: 20rem;
+    margin-bottom: 20rem;
+}
+
+
+#color{
+    height: 54rem;
+    width: 100%;
+    background: var(--Light-grayvish-blue);
+    position: relative;
+    z-index: -2;
+    margin-top: -125rem;
+}
+
+.whyChoose p{
+    color: var(--Grayish-blue);
+    margin-top: 1.5rem;
+    line-height: 1.75rem;
+}
+
+#textCards{
+    margin-bottom: 5rem;
+    align-self: center;
+}
+
+#textCards h2{
+    margin-top: 20rem;
+}
+
+.card img{
+    margin-bottom: 2.5rem;
+    height: 30%;
+}
+
+.card h3{
+    font-weight: 200;
+    font-size: 1.3rem;
+    color: var(--Dark-blue);
+}
+
+#allCards{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;
+}
+
+.modal-overlay-background{
+    visibility: hidden;
+}
+
+.modal-overlay{
+    visibility: hidden;
+}
+
+
+/*Section: lastArticles -----------------------*/
+.articles h2{
+    margin-top: 10rem;
+}
+
+
+#allNews{
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    gap: 1rem;   
+}
+
+#news{
+    background: white;
+    height: 535px;
+    color: var(--Dark-blue);
+    opacity: 0.9;
+    
+}
+
+#news img{
+    height: 50%;width: 100%; object-fit: cover;
+    border-radius: 1rem 1rem 0  0;
+}
+
+#newsText{
+    padding:1.3rem;
+    line-height: 1.4rem;
+    background: white;
+    border-radius: 1rem;
+}
+
+#newsText span{
+    color: var(--Grayish-blue);
+    font-size: 14px;
+}
+
+#newsText p{
+    color: var(--Grayish-blue);
+    font-weight: 200;
+    margin-bottom: 2rem;
+    font-size: 17px;
+}
+
+#newsText h3{
+    font-size: 1.25rem;
+    margin-top: 0.7rem;
+    margin-bottom: 0.7rem;
+    font-weight: 200;
+}
+
+#news:hover{
+    color: hsl(136, 65%, 51%);
+    opacity: 1;
+}
+
+
+/* FOOTER -------------------------------------*/
+
+footer{
+    margin-top: 10rem;
+    background-color: var(--Dark-blue);
+    color: var(--Very-light-grey);
+}
+
+#footer{
+    max-width: 1440px;
+    margin: auto;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    padding: 4rem;
+    align-items: flex-end;
+}
+
+#logo2{
+    margin-bottom: 3rem;
+    height: 1.5rem;
+}
+
+#socialMedias img{
+    margin-right: 0.5rem;
+    margin-bottom: 0.5rem;
+}
+
+footer a{
+    color: var(--Very-light-grey);
+}
+
+#contact a{
+    display: flex;
+    margin-bottom: 1rem;
+}
+
+#contact a:hover{
+    background: -webkit-linear-gradient(45deg,var(--Lime-green),var(--Bright-cyan));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+#request{
+    display: block;
+    text-align: right;
+    color: var(--Grayish-blue);
+    margin-bottom: 0.5rem;
+}
+
+#request div{
+    margin-bottom: 3.5rem;
+    margin-left: 0;
+}
+
+/* RESPOSIVIDADE ----------------------------------------*/
+
+@media(max-width:500px){
+    html{
+        font-size: 87.5%;
+    }
+    section{
+        margin: 1rem;
+    }
+    *{
+        box-sizing: initial;
+    }
+    #color{
+        margin-top: -340rem ;
+        height: 122rem;
+    }
+    h2{
+        text-align: center;
+        margin-bottom: 3rem;
+    }
+    #textCards{
+        text-align: center;
+    }
+
+    #links{
+        visibility: hidden;
+    }
+
+    #container{
+        padding-top: 5rem;
+    }
+
+    header{
+        position: absolute;
+        z-index: 1;
+        padding-right: 5rem;
+    }
+    header #invite{
+        visibility: hidden;
+    }
+    #hamburgerDiv{
+        visibility: hidden;
+        position: initial;
+        margin-left: -5rem;
+    }
+    #close{
+        visibility: hidden;
+        position: initial;
+    }
+    nav{
+        height: 3rem;
+        display: flex;
+        margin: 2rem 3rem;
+    }
+    #all{
+        display: block;
+    }
+    #content{
+        margin-top: 38rem;
+        text-align: center;
+        display: block;
+    }
+
+    #cellphone{
+        height: auto;
+        width: 90%;
+        max-width: 600px;
+        min-width: 180px;
+        margin-top: -65rem;
+        margin-left: 1rem  !important;
+        margin-right: 5% !important;
+
+    }
+    #backcolor{
+        margin-top: -85rem;
+        margin-left: -12rem;
+        height: auto;
+        width: 90%;
+        min-width: 1000px;
+    }
+
+
+    .whyChoose{
+        margin-top: 20rem;
+        text-align: center;
+    }
+    #textCards h2{
+        margin-top: 2rem;
+    }
+    .card{
+        margin-top: 5rem;
+    }
+    .card img{
+        height: 8rem;
+    }
+
+
+    .articles h2{
+        margin-bottom: 5rem;
+    }
+    #allCards{
+        display: block;
+    }
+
+    #allNews{
+        display: block;
+    }
+    #news img{
+        height: 15rem ;width: 100%; object-fit: cover;
+    }
+    #newsText{
+        height: 15rem;
+        margin-bottom: 2rem;
+        padding: 2rem 3rem;
+        line-height: 2rem;
+    }
+    #newsText p{
+        margin-top: 1.5rem;
+    }
+    #newsText h3{
+        margin-top: 1.5rem;
+    }
+    #newsText span{
+        margin-top: 0;
+    }
+
+
+    #footer{
+        display: block;
+        text-align: center;
+    }
+
+    #icons{
+        margin-bottom: 2rem;
+    }
+
+    #socialMedias img{
+        height: auto;
+        width: 5%;
+        margin: 0 1rem;
+    }
+
+    #logo2{
+        height: auto;
+        width: 40% ;
+        margin-bottom: 2rem;
+    }
+
+    #contact a{
+        display: inline-block;
+        text-align: center;
+        margin: 0.8rem 25%;
+    }
+    #request{
+        margin-top: 3.5rem;
+        text-align: center;
+
+
+        
+    }
+    /*MODAL OVERLAY -----------------------------*/
+
+    .modal-overlay-background{
+        width: 100%;
+        height: 100%;
+        background: var(--Dark-blue);
+        opacity: 0.5;
+        position: fixed;
+        top: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+    .modal-overlay{
+        width: 100%;
+        height: 100%;
+        position: fixed;
+        top: 0;
+        display: flex;
+        margin-top: 10rem;
+        justify-content: center;
+        visibility: hidden;
+    }
+
+    .modal{
+        height: 38%;
+        width: 75%;
+        background: var(--Light-grayvish-blue);
+        padding: 6rem 0 2rem;
+        border-radius: 0.5rem;
+        
+    }
+
+    .modal a{
+        display: block;
+        font-size: 28px;
+        text-align: center;
+        justify-content: center;
+        padding: 1rem 2rem;
+        color: var(--Dark-blue);
+    }
+
+    .active{
+        visibility: visible;
+    }
+    .on {
+        visibility: visible!important;
+        position: absolute !important;
+    }
+}
+
